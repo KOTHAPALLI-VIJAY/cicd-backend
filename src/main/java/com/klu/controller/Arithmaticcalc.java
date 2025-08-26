@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")   // base path
 @CrossOrigin
 public class Arithmaticcalc {
-
+	@GetMapping
+	public String home() {
+	    return "Backend is running!";
+	}
     @GetMapping("sub/{A}/{B}")
     public String sub(@PathVariable("A") int a, @PathVariable("B") int b) {
         return "Subtraction = " + (a - b);
