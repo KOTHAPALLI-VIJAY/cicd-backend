@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/")   // base path
-@CrossOrigin(origins ="http://localhost:9090/")
+@CrossOrigin
 public class Arithmaticcalc {
 
     @GetMapping("sub/{A}/{B}")
